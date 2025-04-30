@@ -13,8 +13,8 @@ Una calculadora simple implementada en JavaScript que permite calcular el consum
 Clona el repositorio:
 
 ```bash
-git clone https://github.com/tu_usuario/calculadora-js.git
-cd calculadora-js
+git clone https://github.com/vidaencodigo/consumo-kWh.git
+cd consumo-kWh
 ```
 
 ## Modo de uso
