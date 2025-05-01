@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de consumo</title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <style>
+        body {
+            display: flex;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="app" id="app">
+        <div class="container">
+            <h1>Calculadora de consumo</h1>
+            <form id="calculator-form">
+                <div class="row">
+                    <div class="input-field col s12 m6">
+                        <input type="number" id="power" required>
+                        <label for="power">Poder (W)</label>
+                    </div>
+                    <div class="input-field col s12 m6">
+                        <input type="number" id="time" required>
+                        <label for="time">Tiempo de cosumo al dia (Horas)</label>
+                    </div>
+                    <div class="input-field col s12 ">
+                        <input type="number" id="price" required>
+                        <label for="price">Precio por kWh</label>
+                    </div>
+                    <button class="btn waves-effect waves-light purple darken-3" type="submit">Calcular
+                        <i class="material-icons right">calculate</i>
+                    </button>
+                </div>
+
+            </form>
+
+            <div id="result" class="card-panel purple white-text"></div>
+        </div>
+    </main>
+
+
+
+    <footer class="page-footer pink darken-1">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Calculadora de consumo electrico</h5>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2025Copyright <a class="grey-text text-lighten-3" href="http://github.com/vidaencodigo"
+                    target="_blank">Emmanuel</a>
+            </div>
+        </div>
+    </footer>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+
+</html>
