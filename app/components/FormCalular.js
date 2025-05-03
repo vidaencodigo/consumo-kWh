@@ -23,7 +23,7 @@ function FormCalcular() {
                         <input type="number" id="price" step = "any" required>
                         <label for="price">Precio por kWh</label>
                     </div>
-                    <button id="calculate" class="btn waves-effect waves-light purple darken-3 btn-large z-depth-3" type="button">Calcular
+                    <button id="calculate" class="btn waves-effect waves-light cyan darken-2 btn-large z-depth-3" type="button">Calcular
                         <i class="material-icons right">calculate</i>
                     </button>
                 </div>

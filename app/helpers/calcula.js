@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const $calcular = document.querySelector("#calculate");
     const $result = document.querySelector("#result");
     const $div = document.createElement("div");
-    $div.classList.add("card-panel", "purple", "darken-1", "white-text", "center-align");
+    $div.classList.add("card-panel", "cyan", "lighten-1", "center-align");
 
     $calcular.addEventListener("click", (e) => {
         e.preventDefault();
