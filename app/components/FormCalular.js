@@ -4,7 +4,7 @@ function FormCalcular() {
     $form.classList.add('container');
     $form.innerHTML = `
             
-            <p>Calcula el consumo de un aparato electrico en kWh y su costo aproximado.</p>
+            <h1>Calculadora de consumo</h1>
             <form id="calculator-form">
                 <div class="row">
                     <div class="input-field col s12 m6">
