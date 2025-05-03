@@ -10,6 +10,7 @@ function calcular() {
         "power": $power.value,
         "time": $time.value,
         "period": $period.value,
+        "total_periodo": CalcularPeriodo($period.value, Calcular($power.value, $time.value)),
         "total_costo": CalculaTotalPago(CalcularPeriodo($period.value, Calcular($power.value, $time.value)), $price.value)
     }
     return response;
@@ -28,9 +29,11 @@ document.addEventListener("DOMContentLoaded", () => {
         $div.innerHTML = `
             <p>Un aparato de ${res.power} W encedido ${res.time} horas por ${res.period} dias
             <br>
-            tiene un costo aproximado de <strong> $${res.total_costo.toFixed(2)}</strong>.
+            consume ${res.total_periodo.toFixed(2)} kWh en promedio, y tiene un costo aproximado de: 
             </p>
             
+            <h3> $${res.total_costo.toFixed(2)}</h3>
+        
         `;
         $result.innerHTML = "";
         $result.appendChild($div);
